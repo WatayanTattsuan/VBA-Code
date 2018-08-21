@@ -1,10 +1,10 @@
-Attribute VB_Name = "ƒTƒ“ƒvƒŠƒ“ƒOæ“¾"
+Attribute VB_Name = "ã‚µãƒ³ãƒ—ãƒªãƒ³ã‚°å–å¾—"
 Option Explicit
 
-Sub ƒTƒ“ƒvƒŠƒ“ƒOæ“¾()
+Sub ã‚µãƒ³ãƒ—ãƒªãƒ³ã‚°å–å¾—()
 
 '------------------------------------------------------------------------------------------
-'@ƒTƒ“ƒvƒŠƒ“ƒOæ“¾ˆ—
+'ã€€ã‚µãƒ³ãƒ—ãƒªãƒ³ã‚°å–å¾—å‡¦ç†
 '------------------------------------------------------------------------------------------
 
     Dim i As Long
@@ -12,9 +12,11 @@ Sub ƒTƒ“ƒvƒŠƒ“ƒOæ“¾()
     Dim y As Long
     
     Dim WS As Worksheet
+    Dim WS2 As Worksheet
         
     Set WS = Worksheets("sheet1")
-        
+    set WS2 = worksheets("sheet2")
+    
     ActiveSheet.Range("C1:C100").Value = ""
     For i = 1 To 30
         x = WS.Range("B6").End(xlDown).Row
@@ -24,6 +26,6 @@ Sub ƒTƒ“ƒvƒŠƒ“ƒOæ“¾()
      
     Next i
     
-    MsgBox "I—¹‚µ‚Ü‚µ‚½"
+    MsgBox "çµ‚äº†ã—ã¾ã—ãŸ"
 
 End Sub
